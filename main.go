@@ -27,7 +27,7 @@ func main() {
 	app := App{
 		bot:  bot,
 		log:  *log.Default(),
-		addr: os.Getenv("SERVER_ADDR"),
+		addr: os.Getenv("SERVER_ADDR") + ":" + os.Getenv("PORT"),
 	}
 
 	// Start the server.
